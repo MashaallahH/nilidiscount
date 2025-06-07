@@ -1,9 +1,7 @@
-// Handle all "Buy Now" buttons
-const buttons = document.querySelectorAll('.buy-button');
+const buttons = document.querySelectorAll(".buy-btn");
 
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const productName = button.getAttribute('data-product');
-    alert(`You clicked Buy Now for: ${productName}`);
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    alert("Thank you for your interest! This feature will be live soon.");
   });
 });
