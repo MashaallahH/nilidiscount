@@ -1,127 +1,155 @@
-/* Base Styles */
-body {
-  font-family: Arial, sans-serif;
+/* style.css */
+
+/* Reset and base */
+* {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0 1rem;
-  background-color: #f7f7f7;
-  color: #333;
+  padding: 0;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
 header {
   text-align: center;
-  padding: 2rem 0;
-  background-color: #004aad;
+  padding: 40px 20px 30px;
+  background-color: #0077cc;
   color: white;
+  border-radius: 8px;
 }
 
-h1, h2 {
-  margin-bottom: 0.5rem;
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.3em;
 }
 
-nav {
-  background-color: #003377;
+header p {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  list-style: none;
-  padding: 1rem;
-  margin: 0;
-  flex-wrap: wrap;
+/* Section styling */
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
 }
 
-.navbar li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 0.5rem;
-  transition: all 0.3s ease;
+/* Section headings */
+section h2 {
+  margin-bottom: 15px;
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 8px;
 }
 
-.navbar li a:hover {
-  background-color: #0055cc;
-  border-radius: 5px;
-  color: #ffcc00;
+/* Paragraph spacing */
+section p {
+  margin-bottom: 20px;
+  font-size: 1rem;
 }
 
-/* Product Grid */
+/* Product row layout using flexbox */
 .product-row {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  margin: 1rem 0;
 }
 
+/* Product card styling */
 .product-card {
-  background-color: white;
+  flex: 1 1 250px;
+  background-color: #fafafa;
   padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  width: 220px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 .product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
 }
 
 .product-card img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
-
-/* Form Styling */
-form {
-  max-width: 400px;
-  margin: auto;
-}
-
-input, textarea, button {
   width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
-button {
-  background-color: #004aad;
+/* Product lists inside cards */
+.product-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Contact form styling */
+form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+form button {
+  background-color: #0077cc;
   color: white;
   border: none;
-  font-weight: bold;
+  padding: 12px 25px;
+  font-size: 1rem;
   cursor: pointer;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #003377;
+form button:hover {
+  background-color: #005fa3;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #ddd;
-  margin-top: 2rem;
+  padding: 20px 10px;
+  margin-top: 40px;
   font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ccc;
 }
 
-/* Responsive Design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .product-row {
     flex-direction: column;
-    align-items: center;
   }
 
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
+  header h1 {
+    font-size: 2rem;
   }
 }
