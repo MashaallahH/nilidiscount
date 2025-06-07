@@ -2,88 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My E-commerce Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My E-commerce Store - Week 4</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1>My E-commerce Store</h1>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Banner -->
+  <!-- Hero Section -->
   <header class="hero">
-    <h2>Tech Deals You Can’t Miss!</h2>
-    <p>Shop phones, TVs, laptops and more with unbeatable prices.</p>
+    <h1>Welcome to My E-commerce Store</h1>
+    <p>Your one-stop shop for electronics, gadgets, and tech deals.</p>
   </header>
 
-  <!-- Products Section -->
-  <main id="products" class="product-section">
-    <h2>Our Top Products</h2>
-    <div class="product-grid">
+  <hr />
 
+  <!-- Phones Section -->
+  <section class="products-section">
+    <h2>Phones</h2>
+    <div class="product-row">
       <div class="product-card">
         <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14-gallery1-202209_FMT_WHH?wid=600&hei=600&fmt=jpeg" alt="iPhone 14" />
         <h3>iPhone 14</h3>
-        <p>$899</p>
-        <button class="buy-btn">Buy Now</button>
+        <button class="buy-btn" data-product="iPhone 14">Buy Now</button>
       </div>
-
       <div class="product-card">
         <img src="https://images.samsung.com/is/image/samsung/assets/global/galaxy-s23-ultra/highlights/galaxy-s23-highlights-kv.jpg" alt="Samsung Galaxy S23" />
-        <h3>Galaxy S23</h3>
-        <p>$799</p>
-        <button class="buy-btn">Buy Now</button>
+        <h3>Samsung Galaxy S23</h3>
+        <button class="buy-btn" data-product="Samsung Galaxy S23">Buy Now</button>
       </div>
-
       <div class="product-card">
-        <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel8-1.jpg" alt="Pixel 8" />
-        <h3>Pixel 8</h3>
-        <p>$699</p>
-        <button class="buy-btn">Buy Now</button>
+        <img src="https://lh3.googleusercontent.com/B6Py4J72zEd5Dd1U9KwDeq4q9vQc1F7C9SkcU7Q5YuP3izliJmD5Wb9D6oIzT-K4v0p7xOJLF7EgiYZXOqPHDI=w600" alt="Google Pixel 8" />
+        <h3>Google Pixel 8</h3>
+        <button class="buy-btn" data-product="Google Pixel 8">Buy Now</button>
       </div>
-
-      <div class="product-card">
-        <img src="https://images.samsung.com/is/image/samsung/p6pim/de/qled-q80b/gallery/de-qled-q80b-qe65q80batxzg-533725526?$650_519_PNG$" alt="Samsung QLED TV" />
-        <h3>Samsung QLED TV</h3>
-        <p>$999</p>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://www.lg.com/us/images/tvs/md07500538/gallery/medium01.jpg" alt="LG OLED TV" />
-        <h3>LG OLED TV</h3>
-        <p>$1,299</p>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-
-      <div class="product-card">
-        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-spacegray-select-202206?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1653493200207" alt="MacBook Air" />
-        <h3>MacBook Air</h3>
-        <p>$999</p>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-
     </div>
-  </main>
+  </section>
+
+  <hr />
+
+  <!-- TVs Section -->
+  <section class="products-section">
+    <h2>TVs</h2>
+    <div class="product-row">
+      <div class="product-card">
+        <img src="https://images.samsung.com/is/image/samsung/assets/global/tvs/qled-qn90c/gallery/qn90c-kv.jpg" alt="Samsung QLED" />
+        <h3>Samsung QLED</h3>
+        <button class="buy-btn" data-product="Samsung QLED">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.lg.com/is/image/lg/p3-65oled65g1pua-oled-tv-01-d-01?$webOSD$" alt="LG OLED" />
+        <h3>LG OLED</h3>
+        <button class="buy-btn" data-product="LG OLED">Buy Now</button>
+      </div>
+      <div class="product-card">
+        <img src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/138972-tv-review-lg-oled-c1-oled-tv-review-image1-dgtyte4hcl.jpg" alt="Sony Bravia" />
+        <h3>Sony Bravia</h3>
+        <button class="buy-btn" data-product="Sony Bravia">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <hr />
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section class="contact-section">
     <h2>Contact Us</h2>
     <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message"></textarea><br /><br />
+
+      <button type="submit">Send</button>
     </form>
   </section>
+
+  <hr />
 
   <!-- Footer -->
   <footer>
