@@ -1,155 +1,26 @@
-/* style.css */
-
-/* Reset and base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7fa;
-  color: #333;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 40px 20px 30px;
-  background-color: #0077cc;
-  color: white;
-  border-radius: 8px;
+header, section, footer {
+  margin-bottom: 40px;
 }
 
-header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.3em;
-}
-
-header p {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-/* Section styling */
-section {
-  margin: 40px 0;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-}
-
-/* Section headings */
-section h2 {
-  margin-bottom: 15px;
-  color: #0077cc;
-  border-bottom: 2px solid #0077cc;
-  padding-bottom: 8px;
-}
-
-/* Paragraph spacing */
-section p {
+.product {
   margin-bottom: 20px;
-  font-size: 1rem;
 }
 
-/* Product row layout using flexbox */
-.product-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-/* Product card styling */
-.product-card {
-  flex: 1 1 250px;
-  background-color: #fafafa;
-  padding: 15px;
-  border-radius: 6px;
-  box-shadow: 0 1px 6px rgb(0 0 0 / 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-/* Product lists inside cards */
-.product-card ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Contact form styling */
-form label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 6px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 8px 12px;
-  margin-bottom: 15px;
-  border: 1.5px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-  resize: vertical;
-}
-
-form textarea {
-  min-height: 100px;
-}
-
-form button {
-  background-color: #0077cc;
+.buy-button {
+  padding: 10px 16px;
+  background-color: #008cba;
   color: white;
   border: none;
-  padding: 12px 25px;
-  font-size: 1rem;
-  cursor: pointer;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-form button:hover {
-  background-color: #005fa3;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 40px;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ccc;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .product-row {
-    flex-direction: column;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
+.buy-button:hover {
+  background-color: #005f73;
 }
