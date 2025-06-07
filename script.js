@@ -1,7 +1,6 @@
-const buttons = document.querySelectorAll(".buy-btn");
-
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    alert("Thank you for your interest! This feature will be live soon.");
+document.querySelectorAll('.buy-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const product = button.getAttribute('data-product');
+    alert(`Thank you for choosing to buy: ${product}`);
   });
 });
