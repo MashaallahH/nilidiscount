@@ -1,91 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My E-commerce Store - Week 4</title>
+  <title>My E-commerce Store - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">MyStore</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="toggle navigation">&#9776;</button>
+  </nav>
+
   <header class="hero">
-    <h1>Welcome to My E-commerce Store</h1>
-    <p>Your one-stop shop for electronics, gadgets, and tech deals.</p>
+    <h1>Welcome to MyStore</h1>
+    <p>Your one-stop shop for the latest electronics and gadgets.</p>
+    <a href="products.html" class="btn-primary">Shop Now</a>
   </header>
 
-  <hr />
-
-  <!-- Phones Section -->
-  <section class="products-section">
-    <h2>Phones</h2>
-    <div class="product-row">
-      <div class="product-card">
-        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14-gallery1-202209_FMT_WHH?wid=600&hei=600&fmt=jpeg" alt="iPhone 14" />
-        <h3>iPhone 14</h3>
-        <button class="buy-btn" data-product="iPhone 14">Buy Now</button>
-      </div>
-      <div class="product-card">
-        <img src="https://images.samsung.com/is/image/samsung/assets/global/galaxy-s23-ultra/highlights/galaxy-s23-highlights-kv.jpg" alt="Samsung Galaxy S23" />
-        <h3>Samsung Galaxy S23</h3>
-        <button class="buy-btn" data-product="Samsung Galaxy S23">Buy Now</button>
-      </div>
-      <div class="product-card">
-        <img src="https://lh3.googleusercontent.com/B6Py4J72zEd5Dd1U9KwDeq4q9vQc1F7C9SkcU7Q5YuP3izliJmD5Wb9D6oIzT-K4v0p7xOJLF7EgiYZXOqPHDI=w600" alt="Google Pixel 8" />
-        <h3>Google Pixel 8</h3>
-        <button class="buy-btn" data-product="Google Pixel 8">Buy Now</button>
-      </div>
-    </div>
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>
+      We offer quality products, great prices, and fast shipping.
+      Browse our collection of phones, TVs, laptops, and more.
+    </p>
   </section>
 
-  <hr />
-
-  <!-- TVs Section -->
-  <section class="products-section">
-    <h2>TVs</h2>
-    <div class="product-row">
-      <div class="product-card">
-        <img src="https://images.samsung.com/is/image/samsung/assets/global/tvs/qled-qn90c/gallery/qn90c-kv.jpg" alt="Samsung QLED" />
-        <h3>Samsung QLED</h3>
-        <button class="buy-btn" data-product="Samsung QLED">Buy Now</button>
-      </div>
-      <div class="product-card">
-        <img src="https://images.lg.com/is/image/lg/p3-65oled65g1pua-oled-tv-01-d-01?$webOSD$" alt="LG OLED" />
-        <h3>LG OLED</h3>
-        <button class="buy-btn" data-product="LG OLED">Buy Now</button>
-      </div>
-      <div class="product-card">
-        <img src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/138972-tv-review-lg-oled-c1-oled-tv-review-image1-dgtyte4hcl.jpg" alt="Sony Bravia" />
-        <h3>Sony Bravia</h3>
-        <button class="buy-btn" data-product="Sony Bravia">Buy Now</button>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <form>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" /><br /><br />
-
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" /><br /><br />
-
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message"></textarea><br /><br />
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <hr />
-
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My E-commerce Store. All rights reserved.</p>
+    <p>&copy; 2025 MyStore. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
