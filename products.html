@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My E-commerce Store - Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">MyStore</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="toggle navigation">&#9776;</button>
+  </nav>
+
+  <main>
+    <h1>Our Products</h1>
+
+    <section class="products-grid">
+      <!-- Product Card Template -->
+      <div class="product-card" data-id="iphone14" data-name="iPhone 14" data-price="799">
+        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14-gallery1-202209_FMT_WHH?wid=600&hei=600&fmt=jpeg" alt="iPhone 14" />
+        <h3>iPhone 14</h3>
+        <p class="price">$799</p>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="galaxyS23" data-name="Samsung Galaxy S23" data-price="899">
+        <img src="https://images.samsung.com/is/image/samsung/assets/global/galaxy-s23-ultra/highlights/galaxy-s23-highlights-kv.jpg" alt="Samsung Galaxy S23" />
+        <h3>Samsung Galaxy S23</h3>
+        <p class="price">$899</p>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="pixel8" data-name="Google Pixel 8" data-price="699">
+        <img src="https://lh3.googleusercontent.com/B6Py4J72zEd5Dd1U9KwDeq4q9vQc1F7C9SkcU7Q5YuP3izliJmD5Wb9D6oIzT-K4v0p7xOJLF7EgiYZXOqPHDI=w600" alt="Google Pixel 8" />
+        <h3>Google Pixel 8</h3>
+        <p class="price">$699</p>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="samsungQLED" data-name="Samsung QLED TV" data-price="1200">
+        <img src="https://images.samsung.com/is/image/samsung/assets/global/tvs/qled-qn90c/gallery/qn90c-kv.jpg" alt="Samsung QLED" />
+        <h3>Samsung QLED TV</h3>
+        <p class="price">$1,200</p>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="lgOLED" data-name="LG OLED TV" data-price="1500">
+        <img src="https://images.lg.com/is/image/lg/p3-65oled65g1pua-oled-tv-01-d-01?$webOSD$" alt="LG OLED" />
+        <h3>LG OLED TV</h3>
+        <p class="price">$1,500</p>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-id="macbookAir" data-name="MacBook Air" data-price="999">
+        <img src="https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP808/macbook-air-gallery1-201710.jpg" alt="MacBook Air" />
+        <h3>MacBook Air</h3>
+        <p class="price">$999</p>
+        <button class="buy-btn">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MyStore. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
